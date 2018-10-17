@@ -1,0 +1,223 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.nav {
+	background-color: #3C4237;
+	height: 100vh;
+	width: 200px;
+	position: fixed;
+
+}
+
+.main {
+	margin-left: 200px;
+}
+
+.banner {
+	background-color: white;
+	height: 100vh;
+	position: relative;
+	background: url(../images/bannerbg.jpeg) no-repeat center center fixed;
+}
+
+.about {
+	/*background-color: indianred;*/
+	height: 450px;
+	background: url(../images/aboutbg.jpeg) no-repeat center center fixed;
+	color: white;
+	position: relative;
+}
+
+.services {
+	background-color: midnightblue;
+	height: auto;
+	background: url(../images/servicesbg.jpeg) no-repeat center center fixed;
+	position: relative;
+	color: white;
+}
+
+.projects {
+	background-color: crimson;
+	height: 270px;
+	background: url(../images/projectsbg.jpeg) no-repeat center center fixed;
+	position: relative;
+	color: white;
+}
+
+.gallery {
+	background-color: orange;
+	height: auto;
+	background: url(../images/gallerybg.jpeg) no-repeat center center fixed;
+	position: relative;
+}
+
+.footer {
+	background-color: #7C8973;
+	height: auto;
+	color: white;
+}
+
+.nav,
+.banner,
+.about,
+.services,
+.projects,
+.gallery,
+.footer {
+	padding: 30px;
+}
+
+#navicon {
+	margin: 150px 0 0 0;
+	padding: 0;
+	width: 140px;
+	height: auto;
+}
+
+.nav li a {
+	text-decoration: none;
+	color: white;
+}
+
+ul	> li {
+	list-style: none;
+	background-color: #695958;
+	margin-bottom: 5px;
+	line-height: 48px; /*base font-size: 16px. 16 *3 = 48px;*/
+	text-align: center;
+}
+
+ul > li:hover {
+	background-color: #D83F3A;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+
+.box {
+	border: 5px solid white;
+	text-align: center;
+	width: 40%;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	background-color:rgba(150,150,150,0.5);
+}
+
+.boxabout {
+	border: 5px solid white;
+	text-align: justify;
+	width: 90%;
+	padding: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	background-color:rgba(150,150,150,0.5);
+	margin-top: 10px;
+}
+
+.column {
+	background-color: rgba(63, 63, 61, 0.8);
+	width: 31%;
+	margin-left: 1.16%;
+	margin-right: 1.16%;
+	float: left;
+	border: 3px solid white;
+	min-height: 200px;
+	color: ivory;
+}
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+img[alt*="service"] {
+	border: 1px solid black;
+	width: 60px;
+	height: 60px;
+	display: block;
+	float: left;
+}
+
+.no-top {
+	margin-top: 0;
+}
+
+.gallery > .column {
+	width: 23%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+img[alt*=gallery] {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.contact {
+	float: left;
+	width: 50%;
+	text-align: right;	
+}
+
+.gallerytext {
+	padding: 0px 10px;
+	text-align: block;
+	margin-bottom: 5px;
+}
+
+.box #topleft {
+	position: absolute;
+    left: -50px;
+    top: -80px;
+}
+
+.box #bottomright {
+	position: absolute;
+    left: 350px;
+    top: 60px;
+}
+
+.footerlinks {
+	width: 20px;
+	height: 20px;
+}
+
+#footername {
+	float: left;
+	width: 50%;
+	margin: 0;
+	padding: 0;
+}
+
+.servicesimg {
+	width: 150px;
+	height: auto;
+	float: left;
+	margin: 0px 5px 5px 0px;
+}
+
+.services > .column {
+	padding: 5px;
+	margin-top: 10px;
+}
+
+.gallery .column {
+	margin-top: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
